@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>COLLEGE STUDENT PROTOFOLIO</title>
+    <style>
+      body{
+        background-image:url(https://png.pngtree.com/background/20210710/original/pngtree-world-book-day-423-charity-banner-picture-image_998620.jpg);   
+        background-size:cover;
+        font-family:  Arial, sans-serif;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      header{
+        background-color: #333;
+        color:#f0f0f0;
+        text-align: center;
+        padding: 90px;;
+        position: relative;
+      }
+      .header-content h1{
+        font-size: 1.5rem;
+      }
+      nav{
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+      }
+      nav ul{
+        list-style-type: none;
+        padding: 0px;
+      }
+      nav ul li{
+        display: inline;
+        margin:  20px;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color:#fff;
+      }
+      .section-content{
+        background-color: #fff;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+      }
+      .download_button{
+        background-color: #333;
+        padding:0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 20px;
+        display: inline-block;
+        margin-top: 10px;
+      }
+      footer{
+        text-align: center;
+        padding: 1rem 0;
+        background-color: #333;
+        color: #fff;
+      }
+      ul{
+        list-style-type: lower-alpha;
+        padding-left: 20px;
+      }
+      .error{
+        color:red;
+      }
+      </style>
+      </head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>STUDENT PROTOFOLIO</h1>
+            <h3>Semster Details</h3>
+        </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#About">About</a></li>
+        <li><a href="#1st Semster">1st</a></li>
+        <li><a href="#2nd Semster">2nd</a></li>
+        <li><a href="#3rd Semster">3rd</a></li>
+        <li><a href="#4th Semster">4th</a></li>
+        <li><a href="#5th Semster">5th</a></li>
+        <li><a href="6th Semster">6th</a></li>
+      </ul>
+    </nav>
+    <section id="About">
+      <div class="Subject">
+        <h2>About Semsters</h2>
+        <p>This Is About The Studies Of Bachelor Of ComputerApplication Degree</p>
+      </div>
+    </section>
+    <section id="1st Semster">
+     <div class="Subject">
+        <h2>1st Semster</h2>
+        <ul>
+            <li>C</li>
+            <li>English</li>
+            <li>DFA</li>
+            <li>C Lab</li>
+            <li>Tamil</li>
+        </ul>
+      </div>
+      </section>
+      <section id="2nd Semster">
+        <div class="Subject">
+        <h2>2nd Semster</h2>
+        <ul>
+            <li>C++</li>
+            <li>C++ Lab</li>
+            <li>Maths</li>
+            <li>English</li>
+            <li>Tamil</li>
+        </ul>
+        </div>
+        </section>
+        <section id="3rd Semster">
+          <div class="Subject">
+        <h2>3rd Semster</h2>
+        <ul>
+            <li>Data Structure</li>
+            <li>Java</li>
+            <li>Web Programming</li>
+            <li>Java Lab</li>
+            <li>Data Structure</li>
+        </ul>
+        </div>
+        </section>
+        <section id="4th Semster">
+          <div class="Subject">
+        <h2>4th Semster</h2>
+        <ul>
+            <li>Linux</li>
+            <li>Web Lab</li>
+            <li>Accountancy</li>
+            <li>Maths</li>
+            <li>SSOS</li>
+        </ul>
+        </div>
+        </section>
+        <section id="5th Semster">
+          <div class="Subject">
+        <h2>5th Semster</h2>
+        <ul>
+            <li>Python</li>
+            <li>RDBMS</li>
+            <li>VB</li>
+            <li>CaseTools</li>
+            <li>VB Lab</li>
+        </ul>
+        </div>
+        </section>
+        <section id="6th semster">
+          <div class="Subject">
+        <h2>6th Semster</h2>
+        <ul>
+            <li>Casetools Lab</li>
+            <li>Python Lab</li>
+            <li>Graphics Lab</li>
+            <li>Project Lab</li>
+        </ul>
+        </div>
+      </section>
+      <h1><Bold><center><font-c0lor>EXAMINATION FORM</FORM></font-c0lor></center></bold></h1>
+      <form id="examForm" onsubmit="return validateform()">
+      <label for="name">First Name:</label>
+      <input type="text" id="name"required>
+      <label for="name">Middle Name:</label>
+      <input type="text" id="name"optional>
+      <label for="name">Last Name:</label>
+      <input type="text" id="name"required><br>
+      <label for="email id">EMAIL ID:</label>
+      <input type="email" id="email"required><br>
+      <label for="contact number">CONTACT NUMBER:</label>
+      <input type="text" id="contact number"required><br>
+      <label for="subject">SUBJECT OF EXAMINATION:</label>
+      <input type="text" id="subject"required><br>
+      <label for="course">COURSE</label>
+      <input type="text" id="course"required><br>
+      <label for="comments">COMMENTS:</label>
+      <textarea id="comments" rows="4"></textarea><br>
+      <input type="checkbox"id="agreement"required>
+      <label for="ägreement">I Agree To The Examination Terms And Condition</label><br>
+      <button type="submit">SUBMIT</button>
+      <button type="cancel">CANCEL</button>
+      <button type="clear">CLEAR</button>
+    </form>
+    <p id="errorMessages"class="error"></p>
+    <script>
+      function validateform(){
+        var name=document.getElementById("name").value;
+        var email=document.getElementById("email").value;
+        var contactnumber=document.getElementById("contact number").value;
+        var subject=document.getElementById("subject").value;
+        var course=document.getElementById("course").value;
+        var comments=document.getElementById("document").value;
+        var agreement=document.getElementById("agreement").value;
+        var errorMessages="";
+        if(name===""||email===""||contactnumber===""||subject===""||course===""||agreement){
+          errorMessages +="AA fields are required.please accept the terms and conditions.<br>";
+        }
+        var errorMessagesElement=document.getElementById("errorMessage");
+         if (errorMessages !==""){
+          errorMessagesElement.innerHTML=errorMessages;
+          return false;
+         } else{
+          errorMessagesElement.innerHTML="";
+          return true;
+         }
+      }
+    </script>
+</body>
+</html>
